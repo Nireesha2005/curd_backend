@@ -17,7 +17,6 @@ public class Service {
 	public List<Product> displayData() {
 		return r1.findAll();
 	}
-
 	public String updateData(Product p) {
 		if (r1.existsById(p.getId())) {
 			r1.save(p);
